@@ -18,6 +18,8 @@ import img7 from '../assets/porkumaran.jpg'
 import img8 from '../assets/coursera.jpg'
 import img9 from '../assets/workshop.jpg'
 import img10 from '../assets/img1.jpg';
+import img11 from '../assets/img11.jpg';
+import img12 from '../assets/img12.jpg';
 function UserCarousel() {
   const [sampleImages] = useState([
     'https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Nature
@@ -25,7 +27,7 @@ function UserCarousel() {
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Technology
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920'  // Abstract
   ]);
-  const images = [img8 , img9,img10,img7,img1, img2, img4,];
+  const images = [img8 , img9,img10,img7,img1,img11, img2, img4,img12];
 
   
 
