@@ -16,8 +16,8 @@ import img5 from '../assets/Sports-2.webp';
 import img6 from '../assets/Untitled 1.png';
 import img7 from '../assets/porkumaran.jpg'
 import img8 from '../assets/coursera.jpg'
-
 import img9 from '../assets/workshop.jpg'
+import img10 from '../assets/img1.jpg';
 function UserCarousel() {
   const [sampleImages] = useState([
     'https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Nature
@@ -25,22 +25,22 @@ function UserCarousel() {
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Technology
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920'  // Abstract
   ]);
-  const images = [img7,img1, img2, img3, img4, img5,img8 , img9];
+  const images = [img8 , img9,img10,img7,img1, img2, img4,];
 
   
 
   
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
-    <div className="absolute left-0 top-0 bg-white/10 backdrop-blur-lg rounded-xl p-3 z-50 animate-pulse">
+    <div className="absolute left-5 bottom-5 bg-white/10 backdrop-blur-lg rounded-xl p-3 z-50 ">
         
-          <img src={img6} className='w-32 h-32' alt='qrcode'/>
+          <img src={img6} className='w-35 h-35' alt='qrcode'/>
         
       </div>
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         autoplay={{
-          delay: 3000,          // 3 seconds between slides
+          delay: 4000,          // 3 seconds between slides
         //   disableOnInteraction: false, // Continue autoplay after user interaction
         //   pauseOnMouseEnter: true // Pause on hover
         }}
