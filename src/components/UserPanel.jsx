@@ -14,6 +14,10 @@ import img3 from '../assets/Gym-1.webp';
 import img4 from '../assets/foodcourt.webp';
 import img5 from '../assets/Sports-2.webp';
 import img6 from '../assets/Untitled 1.png';
+import img7 from '../assets/porkumaran.jpg'
+import img8 from '../assets/coursera.jpg'
+
+import img9 from '../assets/workshop.jpg'
 function UserCarousel() {
   const [sampleImages] = useState([
     'https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Nature
@@ -21,13 +25,18 @@ function UserCarousel() {
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920', // Technology
     'https://images.unsplash.com/photo-1696944090798-9a7b8b1b1b1b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920'  // Abstract
   ]);
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [img7,img1, img2, img3, img4, img5,img8 , img9];
 
   
 
   
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+    <div className="absolute left-0 top-0 bg-white/10 backdrop-blur-lg rounded-xl p-3 z-50 animate-pulse">
+        
+          <img src={img6} className='w-32 h-32' alt='qrcode'/>
+        
+      </div>
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         autoplay={{
@@ -67,11 +76,7 @@ function UserCarousel() {
       <div className="swiper-button-prev !text-white !left-8 hover:!scale-110 transition-transform" />
 
       {/* QR Code */}
-      <div className="absolute bottom-8 right-8 bg-white/10 backdrop-blur-lg rounded-xl p-3 animate-pulse">
-        <div className="w-16 h-16 bg-gray-300/20 rounded-lg flex items-center justify-center">
-          <span className="text-white text-xs">QR Code</span>
-        </div>
-      </div>
+      
     </div>
   );
 }
